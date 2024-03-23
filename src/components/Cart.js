@@ -121,7 +121,7 @@ const Cart = () => {
         <button
           className="p-3 m-4 bg-blue-500 text-white rounded hover:bg-zinc-950"
           onClick={() => {
-            window.location.reload();
+            window.location.href="/";
             alert("Order placed");
           }}
         >
