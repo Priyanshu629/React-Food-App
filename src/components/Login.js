@@ -30,8 +30,8 @@ const Login = () => {
 
   if (!userData.loggedin) {
     return (
-      <div className="">
-        <div className="w-[50%]   mx-auto border-2 border-black p-4 m-4 text-center">
+      
+        <div className="w-[50%]   mx-auto border-2 border-black p-4 m-4 text-center login">
           <h1 className="text-2xl p-3 font-bold">Login</h1>
           <input type="text" onChange={(e)=>setUsername(e.target.value)} className="p-3 m-2 w-[50%] rounded-lg border border-black" placeholder="Username" />
           <br />
@@ -39,7 +39,7 @@ const Login = () => {
           <br />
           <button onClick={handelLogin} className="p-3 rounded-lg bg-green-900 text-white">Login</button>
         </div>
-      </div>
+      
     );
   } else {
     return (

@@ -39,7 +39,7 @@ const Body = () => {
     );
   }
   return (
-    <div className="w-[100%]">
+    <div className="">
       <div className="flex">
         <div className="search">
           <input
@@ -72,7 +72,7 @@ const Body = () => {
           Top rated restaurant
         </button>
       </div>
-      <div className="flex flex-wrap w-[90%] ">
+      <div className="flex flex-wrap  sm:w-[100%] ">
         {filteredRestaurant.map((restaurant) => {
           return (
             <RestaurantCard key={restaurant.info.id} resData={restaurant} />

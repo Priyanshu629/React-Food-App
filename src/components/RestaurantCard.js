@@ -6,7 +6,7 @@ const RestaurantCard = (props) => {
     props.resData?.info;
   const { deliveryTime } = props.resData?.info?.sla;
   return (
-    <Link to={`/restaurants/${id}`} className="w-80 p-4 border m-4 bg-gray-500 text-blue-100 rounded-lg">
+    <Link to={`/restaurants/${id}`} className="w-80 p-4 border m-4 bg-gray-500 text-blue-100 rounded-lg overflow-hidden card">
       <img src={RES_IMG_URL + cloudinaryImageId} alt="" className="w-80 h-[300px]" />
       <h2 className="font-bold text-lg">{name}</h2>
       <h4>{cuisines.join(",")} </h4>

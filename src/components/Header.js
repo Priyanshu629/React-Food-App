@@ -9,12 +9,13 @@ const Header = () => {
  const cartItems = useSelector((store)=> store.cart.items)
 
   return (
-    <div className=" w-[100%] bg-pink-200 shadow-lg flex justify-between p-4 items-center border  border-black">
+    <div className=" bg-pink-200 shadow-lg flex justify-between p-4 items-center border  border-black sm:w-[100%]">
       <div className="">
         <img src={LOGO_URL} alt="" className="w-28 border rounded-[50%]" />
       </div>
       <div className="">
-        <ul className="flex">
+         
+        <ul className="flex flex-wrap head-list">
           <li className="mx-3 text-[20px] font-semibold text-orange-800 "><Link to={`/`} className="">Home</Link></li>
           <li className="mx-3 text-[20px] font-semibold text-orange-800" > <Link to={`/about`} className="">About</Link></li>
           <li className="mx-3 text-[20px] font-bold text-orange-800"><Link to={'/cart'}>Cart({cartItems.length})</Link></li>
